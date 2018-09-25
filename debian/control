@@ -1,0 +1,22 @@
+Source: expressionizer
+Section: python
+Priority: optional
+Maintainer: Dan Farnsworth <absltkaos@gmail.com>
+Build-Depends-Indep: debhelper (>= 9), dh-python, python-all, python-setuptools, python3-all, python3-setuptools
+Standards-Version: 3.7.2
+X-Python3-Version: >= 3.4
+X-Python2-Version: >= 2.6
+
+Package: python-expressionizer
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+Description: Library for creating complicated expressions based on some input.
+  .
+  This package installs the library for Python 2.
+
+Package: python3-expressionizer
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}
+Description: Library for creating complicated expressions based on some input.
+  .
+  This package installs the library for Python 3.

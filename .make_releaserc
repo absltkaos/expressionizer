@@ -1,0 +1,3 @@
+version_files=(
+    expressionizer/__init__.py
+)

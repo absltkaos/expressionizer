@@ -1,0 +1,13 @@
+expressionizer (0.2.1) unstable; urgency=low
+
+  Add versioning, and debian packaging
+    - Authored by: Dan Farnsworth <absltkaos@gmail.com>
+
+ -- Dan Farnsworth <absltkaos@gmail.com>  Tue, 25 Sep 2018 14:41:12 -0600 
+
+expressionizer (0.2.0) unstable; urgency=low
+
+  Fix whitespace issues
+    - Authored by: Dan Farnsworth <absltkaos@gmail.com>
+
+ -- Dan Farnsworth <absltkaos@gmail.com>  Tue, 25 Sep 2018 12:42:58 -0600 

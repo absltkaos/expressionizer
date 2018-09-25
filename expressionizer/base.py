@@ -193,7 +193,7 @@ class BaseExpression:
         """
         Add a new subexpression group to the operators dictionary. This allows
         different kinds of nouns to be retrieved and combined with.
-        
+
         Start_char cannot be the same as end_char
 
         Args:

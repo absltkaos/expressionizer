@@ -6,7 +6,7 @@ class FlatDictExpression(BaseConditionalExpression):
     """
     Extends BaseConditionalExpression to check values in
     a flattened or single level dictionary.
-    
+
     For example:
     Given a flattened dictionary of:
         {
@@ -17,7 +17,7 @@ class FlatDictExpression(BaseConditionalExpression):
             'key2.foo.enabled': True
         }
     The expression: "key1.subkey2=bob" would result in True.
-    
+
     There is also support for value checking. So with the same example diction above,
     the expression: key2.foo.version>=0.0.4 would result in True
 
@@ -26,7 +26,7 @@ class FlatDictExpression(BaseConditionalExpression):
         flat_dict          A dictionary object that has been flattend
     """
     ops=[ '>=','<=','>','<','!=','=','/','~' ]
-    
+
     def __init__(self,flat_dict,logger=None):
         self.logger = logger or logging.getLogger(self.__class__.__name__)
         self.operators={
@@ -137,7 +137,7 @@ class FlatDictExpression(BaseConditionalExpression):
         Examples of name:
             key2.foo.enabled        Would assume the value of the key is a Boolean and return as such
             key2.foo.version>=0.0.1 Would return true if key2.foo.version is greater than or equal to 0.0.1
-                            
+
         """
         op_data=self._op_split(name)
         kname=op_data[0]
@@ -149,7 +149,7 @@ class FlatDictExpression(BaseConditionalExpression):
             value = self.flat_dict[kname]
         except KeyError:
             return result
-        
+
         #See if we need to do a comparison
         if kop:
             #Perform the comparison
